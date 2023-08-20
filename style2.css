@@ -1,0 +1,33 @@
+@media screen and (max-width:900px) {
+    .carousel-inner{
+        height: 50vh;
+    }
+    .mapp {
+        flex-direction: column;
+    }
+    .mapouter {
+        height: 50vh;
+        padding: 1.5rem;
+    }
+    .gmap_canvas {
+        height: 100%;
+    }
+    .address p , .about-main p{
+        padding: 1rem;
+    }
+    #nos{
+        display: none;
+    }
+    #socialacc{
+        height: 60px;
+        width: 60px;
+    }
+    .insta-container{
+        flex-direction: column;
+        align-items: center;
+
+    }
+#auto_filler_hover{
+    scale: 1;
+}
+}

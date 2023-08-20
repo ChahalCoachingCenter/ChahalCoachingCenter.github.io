@@ -1,7 +1,48 @@
+:root{
+    /* CSS HEX */
+--main: #0F202Aff;
+--white: #F5F7F6ff;
+--light: #B28158ff;
+--charcoal: #2B4E61ff;
+--charcoal-2: #1B3C50ff;
+--indigo-dye: #29526Bff;
+}
+*{
+    box-sizing: border-box;
+}
 html,body{
     width: 100vw;
     height: auto;
     overflow-x: hidden;
+}
+#intro{
+    background-color: var(--main);
+    color: var(--light);
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: auto;
+    padding-bottom: 20px;
+}
+#int-text{width: 60%;display: flex;flex-direction: column;justify-content: start;align-items: center;}
+#intro h1{ font-weight: 900;padding: 10px;font-size: 35px;text-align: center;}
+#intro h2{font-weight: 500;padding: 10px;text-align: center;}
+#intro h5{font-weight: 500;padding: 10px;text-align: center;}
+.subintro{
+    font-weight: 600;background-color: var(--charcoal-2);
+    padding: 15px;border-radius: 20px;font-size: 15px;margin: 5px;display: block;text-align: center;color: var(--white);
+    
+}
+#intro-img{
+    background-image: url(./images/illus-into-c3.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 50vh;
+    width: 40%;
+    border-bottom-left-radius: 120px;
+    box-shadow: inset 2px -2px 3px 1px var(--main);
+    border: none;
 }
 .carousel-inner{
     height: 70vh;
@@ -12,7 +53,7 @@ html,body{
 
 }
 .mapouter{
-    background-color: #dde1e7;
+    background-color: var(--white);
     text-align: right;
     width: 100%;
     height: 80vh;
@@ -35,7 +76,7 @@ html,body{
     
 }
 .address , .about {
-    background-color:#dde1e7;
+    background-color:var(--white);
     display: flex;
     flex-direction: column;
     align-items:center;
@@ -82,38 +123,4 @@ html,body{
 }
 .footer_span{
     display: inline;color: gray;font-size: 13px;font-weight: 500;
-}
-
-@media screen and (max-width:900px) {
-    .carousel-inner{
-        height: 50vh;
-    }
-    .mapp {
-        flex-direction: column;
-    }
-    .mapouter {
-        height: 50vh;
-        padding: 1.5rem;
-    }
-    .gmap_canvas {
-        height: 100%;
-    }
-    .address p , .about-main p{
-        padding: 1rem;
-    }
-    #nos{
-        display: none;
-    }
-    #socialacc{
-        height: 60px;
-        width: 60px;
-    }
-    .insta-container{
-        flex-direction: column;
-        align-items: center;
-
-    }
-#auto_filler_hover{
-    scale: 1;
-}
 }

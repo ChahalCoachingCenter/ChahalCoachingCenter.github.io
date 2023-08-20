@@ -39,11 +39,11 @@ permalinks.forEach(permalink => {
 });
 
 let read_more_reviews = () => {
-    window.location.href = 'https://www.google.com/search?hl=en-IN&gl=in&q=Chahal+Coaching+Center-C3,+RZ+71,+Gali+Number+5,+near+D.K+Depot,+Block+B,+Laxmi+Vihar+Colony,+Najafgarh,+Delhi,+110043&ludocid=4945928519821815802&lsig=AB86z5VYd5mKIlv2oDLs7ucUUA24', '_blank';
+    window.open('https://www.google.com/search?hl=en-IN&gl=in&q=Chahal+Coaching+Center-C3,+RZ+71,+Gali+Number+5,+near+D.K+Depot,+Block+B,+Laxmi+Vihar+Colony,+Najafgarh,+Delhi,+110043&ludocid=4945928519821815802&lsig=AB86z5VYd5mKIlv2oDLs7ucUUA24', '_blank');
 }
 
 let write_review = () => {
-    window.location.href = 'https://www.google.com/search?hl=en-IN&gl=in&q=Chahal+Coaching+Center-C3,+RZ+71,+Gali+Number+5,+near+D.K+Depot,+Block+B,+Laxmi+Vihar+Colony,+Najafgarh,+Delhi,+110043&ludocid=4945928519821815802&lsig=AB86z5VYd5mKIlv2oDLs7ucUUA24', '_blank';
+    window.open('https://search.google.com/local/writereview?placeid=ChIJ4wc514IPDTkR-u9zvMh3o0Q' , '_blank');
 }
 
 // form_fill 
@@ -144,7 +144,7 @@ let auto_form_filler_alert = () => {
             </div>
             <button type="button" class="btn-close position-absolute top-0 end-0 m-4" aria-label="Close" onclick="close_hover_form()"></button>` 
 
-        }, 10000);
+        }, 1000000);
     }
 }
 auto_form_filler_alert();
