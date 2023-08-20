@@ -107,44 +107,40 @@ let auto_form_filler_alert = () => {
         autoFillerAlertTimer = setTimeout(() => {
             let a = document.getElementById('auto_filler_hover')
             a.classList.remove('hide_class');
-            a.innerHTML = `<h3 style="text-align: center;font-weight: 700;background-color: #5e9e16;padding: 20px;border-radius: 0px;color: #dde1e7;font-size: 20px;margin: 0px;">STUDENT REGISTRAION FORM</h3>
-            <div class="form_fill" style="background-color: #bfdfbb;padding: 10px;margin: 0px;">
-                <form id="form_filler_div">
-                    <label for="name" class="form-label">Name</label>
-                    <input type="name" id="name_form_send" class="form-control">
-                    <label for="class" class="form-label">Class</label>
-                    <select class="form-select" aria-label="Default select example" id="class_form_send">
-                        
-                        <option value="Null" style="color: gray;">Select Class</option>
-                        <option value="1st">1st</option>
-                        <option value="2nd">2nd</option>
-                        <option value="3rd">3rd</option>
-                        <option value="4th">4th</option>
-                        <option value="5th">5th</option>
-                        <option value="6th">6th</option>
-                        <option value="7th">7th</option>
-                        <option value="8th">8th</option>
-                        <option value="9th">9th</option>
-                        <option value="10th">10th</option>
-                        <option value="11th">11th</option>
-                        <option value="12th">12th</option>
-                    </select>
-                    <label for="tel" class="form-label">Phone Number</label>
-                    <input type="tel" id="phoneno_form_send" class="form-control">
-                    <label for="address" class="form-label">Permanent Address</label>
-                    <input type="address" id="address_form_send" class="form-control">
-                    <label for="comment" class="form-label">Comment</label>
-                    <textarea type="comment" id="comment_form_send" placeholder="Enter your comment........."
-                        class="form-control"></textarea>
-                        <button type="button" class="btn btn-primary m-3" id="form_detail_btn" onclick="form_filler()">Submit by
-                            Email</button>
-                        <button type="button" class="btn btn-success m-3" id="form_detail_btn" onclick="form_filler_wa()">Submit by
-                            WhatsApp</button>
-                </form>
+            a.innerHTML = `<h3 id="form_heading_title" class="form_heading" style="border-top-left-radius:30px;border-top-right-radius:30px;">STUDENT REGISTRAION FORM</h3>
+            <div class="form_fill" style="background-color: var(--light);padding: 10px;margin: 0px;border-bottom-left-radius:30px;border-bottom-right-radius:30px;" id="form_filler_div">
+            <form>
+            <div class="form-floating mb-3">
+                <input type="name" id="name_form_send" class="form-control form_input_color" placeholder="name@example.com">
+                <label for="name">Name</label>
             </div>
-            <button type="button" class="btn-close position-absolute top-0 end-0 m-4" aria-label="Close" onclick="close_hover_form()"></button>` 
+            <select class="form-select form_input_color mb-3" aria-label="Default select example" id="class_form_send">
+                <option value="Null" style="color: gray;">Select Class</option>
+                <option value="1st">1st</option><option value="2nd">2nd</option><option value="3rd">3rd</option><option value="4th">4th</option><option value="5th">5th</option><option value="6th">6th</option><option value="7th">7th</option><option value="8th">8th</option><option value="9th">9th</option><option value="10th">10th</option><option value="11th">11th</option><option value="12th">12th</option>
+            </select>
+            <div class="form-floating mb-3">
+                <input type="tel" id="phoneno_form_send" class="form-control form_input_color" placeholder="name@example.com">
+                <label for="tel">Phone Number</label>
+            </div>
+            <div class="form-floating mb-3">
+                <input type="address" id="address_form_send" class="form-control form_input_color" placeholder="name@example.com">
+                <label for="address">Permanent Address</label>
+            </div>
+            <div class="form-floating">
+                <textarea type="comment" id="comment_form_send" placeholder="Enter your comment........."
+                class="form-control form_input_color" style="height: 100px;"></textarea>
+                <label for="comment">Comment</label>
+              </div>
+            
+            <button type="button" class="btn form_buttons" id="form_detail_btn" onclick="form_filler()">Submit by
+                Email</button>
+            <button type="button" class="btn form_buttons" id="form_detail_btn" onclick="form_filler_wa()">Submit by
+                WhatsApp</button>
+        </form>
+            </div>
+            <button type="button" class="btn-close position-absolute top-0 end-0 m-4" aria-label="Close" onclick="close_hover_form()" style="color:"var(--white);"></button>` 
 
-        }, 1000000);
+        }, 10000);
     }
 }
 auto_form_filler_alert();

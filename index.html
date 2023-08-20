@@ -62,6 +62,40 @@
         <div id="intro-img"></div>
     </div>
 
+    <!-- form  -->
+    <div class="position-fixed top-50 start-50 translate-middle hide_class" id="auto_filler_hover"></div>
+    <h3 id="form_heading_title" class="form_heading">STUDENT REGISTRAION FORM</h3>
+    <div class="form_fill" style="background-color: var(--light);padding: 10px;margin: 0px;" id="form_filler_div">
+        <form>
+            <div class="form-floating mb-3">
+                <input type="name" id="name_form_send" class="form-control form_input_color" placeholder="name@example.com">
+                <label for="name">Name</label>
+            </div>
+            <select class="form-select form_input_color mb-3" aria-label="Default select example" id="class_form_send">
+                <option value="Null" style="color: gray;">Select Class</option>
+                <option value="1st">1st</option><option value="2nd">2nd</option><option value="3rd">3rd</option><option value="4th">4th</option><option value="5th">5th</option><option value="6th">6th</option><option value="7th">7th</option><option value="8th">8th</option><option value="9th">9th</option><option value="10th">10th</option><option value="11th">11th</option><option value="12th">12th</option>
+            </select>
+            <div class="form-floating mb-3">
+                <input type="tel" id="phoneno_form_send" class="form-control form_input_color" placeholder="name@example.com">
+                <label for="tel">Phone Number</label>
+            </div>
+            <div class="form-floating mb-3">
+                <input type="address" id="address_form_send" class="form-control form_input_color" placeholder="name@example.com">
+                <label for="address">Permanent Address</label>
+            </div>
+            <div class="form-floating">
+                <textarea type="comment" id="comment_form_send" placeholder="Enter your comment........."
+                class="form-control form_input_color"></textarea>
+                <label for="comment">Comment</label>
+              </div>
+            
+            <button type="button" class="btn form_buttons" id="form_detail_btn" onclick="form_filler()">Submit by
+                Email</button>
+            <button type="button" class="btn form_buttons" id="form_detail_btn" onclick="form_filler_wa()">Submit by
+                WhatsApp</button>
+        </form>
+    </div>
+
     <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-inner">
             <div class="carousel-item active">
@@ -86,56 +120,13 @@
         </button>
     </div>
 
-    <!-- form  -->
-    <div class="position-fixed top-50 start-50 translate-middle hide_class" id="auto_filler_hover"
-        style="display: flex;flex-direction: column;justify-content: end;z-index: 20;"></div>
-    <h3 id="form_heading_title"
-        style="text-align: center;font-weight: 700;background-color: #5e9e16;padding: 20px;border-radius: 0px;color: #dde1e7;font-size: 20px;margin: 0px;">
-        STUDENT REGISTRAION FORM</h3>
-    <div class="form_fill" style="background-color: #bfdfbb;padding: 10px;margin: 0px;" id="form_filler_div">
-        <form>
-            <label for="name" class="form-label">Name</label>
-            <input type="name" id="name_form_send" class="form-control">
-            <label for="class" class="form-label">Class</label>
-            <select class="form-select" aria-label="Default select example" id="class_form_send">
-
-                <option value="Null" style="color: gray;">Select Class</option>
-                <option value="1st">1st</option>
-                <option value="2nd">2nd</option>
-                <option value="3rd">3rd</option>
-                <option value="4th">4th</option>
-                <option value="5th">5th</option>
-                <option value="6th">6th</option>
-                <option value="7th">7th</option>
-                <option value="8th">8th</option>
-                <option value="9th">9th</option>
-                <option value="10th">10th</option>
-                <option value="11th">11th</option>
-                <option value="12th">12th</option>
-            </select>
-            <label for="tel" class="form-label">Phone Number</label>
-            <input type="tel" id="phoneno_form_send" class="form-control">
-            <label for="address" class="form-label">Permanent Address</label>
-            <input type="address" id="address_form_send" class="form-control">
-            <label for="comment" class="form-label">Comment</label>
-            <textarea type="comment" id="comment_form_send" placeholder="Enter your comment........."
-                class="form-control"></textarea>
-            <button type="button" class="btn btn-primary m-3" id="form_detail_btn" onclick="form_filler()">Submit by
-                Email</button>
-            <button type="button" class="btn btn-success m-3" id="form_detail_btn" onclick="form_filler_wa()">Submit by
-                WhatsApp</button>
-        </form>
-    </div>
-
 
     <!-- <div id="instafeed-container"></div> -->
 
-    <h2
-        style="text-align: center;background-color:#5e9e16;color:#dde1e7;margin: 0px;font-size: 30px;font-weight: 700;padding: 20px;">
-        Results</h2>
+    <h2 class="form_heading">Results</h2>
     <div class="insta-container"></div>
 
-
+    <!-- mapp  -->
     <div class="mapp">
         <div class="mapouter container">
             <div class="gmap_canvas" style="width: 100%;height: 100%;border-radius: 2rem;"><iframe class="gmap_iframe"
@@ -144,23 +135,20 @@
                     href="https://pdflist.com/" alt="pdf"></a></div>
         </div>
         <div class="address">
-            <h2>Chahal Coaching Center - C3</h2>
-            <p>RZ 71, Gali Number 5, near D.K Depot, Block B, Laxmi Vihar Colony, Najafgarh, Delhi, 110043</p>
-            <a target="_blank" style="border-radius: 70px;padding: 15px;width: 150px;font-weight: 500;width: 90%;"
+            <h2 style="color: var(--main);">Chahal Coaching Center - C3</h2>
+            <p style="color: var(--charcoal-2);">RZ 71, Gali Number 5, near D.K Depot, Block B, Laxmi Vihar Colony, Najafgarh, Delhi, 110043</p>
+            <a target="_blank" style="border-radius: 70px;padding: 15px;width: 150px;font-weight: 500;width: 90%;background: var(--indigo-dye);"
                 href="https://www.google.com/maps/dir//Chahal+Coaching+Center-C3/@28.6272113,76.9258988,12z/data=!4m8!4m7!1m0!1m5!1m1!1s0x390d0f82d73907e3:0x44a377c8bc73effa!2m2!1d76.9959242!2d28.6272297"
-                class="link-light link-offset-2 link-underline link-underline-opacity-0 btn m-2 btn-primary"><i
+                class="link-light link-offset-2 link-underline link-underline-opacity-0 btn m-2 "><i
                     class="fa fa-map-marker"></i> Get Direction</a>
         </div>
     </div>
 
     <!-- reviews  -->
     <div class="reviews"
-        style="background-color: #dde1e7;padding: 10px;display: grid;grid-template-columns: 1fr 1fr;grid-template-rows: auto;">
-
-        <div class="card m-2" style="min-width: 90%;background-color:#5f9e1689;color: #000000;">
-            <div class="card-header" style="font-weight: 700;font-size: 16px;">
-                Shrishti Sinha
-            </div>
+        style="background-color: var(--white);padding: 10px;display: grid;grid-template-columns: 1fr 1fr;grid-template-rows: auto;">
+        <div class="card m-2 review_color">
+            <div class="card-header" style="font-weight: 700;font-size: 16px;">Shrishti Sinha</div>
             <div class="card-body">
                 <h5 class="card-title">⭐⭐⭐⭐⭐ 5/5</h5>
                 <p class="card-text" style="font-weight: 500;font-size: 12px;">"My experience in chahal coaching centre
@@ -168,15 +156,13 @@
                     tution and get good results 😄. Teachers are very friendly so the students can understand the
                     concept easily. Concepts are cleared very well. 😄"</p>
             </div>
-            <div class="card-footer text-body-secondary" style="font-weight: 500;font-size: 12px;">
+            <div class="card-footer" style="font-weight: 500;font-size: 12px;">
                 Reviews on Google
             </div>
         </div>
 
-        <div class="card m-2" style="min-width: 90%;background-color:#5f9e1689;color: #000000;">
-            <div class="card-header" style="font-weight: 700;font-size: 16px;">
-                Harshi Kumari
-            </div>
+        <div class="card m-2 review_color">
+            <div class="card-header" style="font-weight: 700;font-size: 16px;">Harshi Kumari</div>
             <div class="card-body">
                 <h5 class="card-title">⭐⭐⭐⭐⭐ 5/5</h5>
                 <p class="card-text" style="font-weight: 500;font-size: 12px;">"I gave it 5 stars because I studied in
@@ -188,28 +174,24 @@
                     Thank you to Nirmal bhaiya
                     Go to C3 and explore a new way of learning😄😄😄"</p>
             </div>
-            <div class="card-footer text-body-secondary" style="font-weight: 500;font-size: 12px;">
+            <div class="card-footer" style="font-weight: 500;font-size: 12px;">
                 Reviews on Google
             </div>
         </div>
-        <div class="card m-2" style="min-width: 90%;background-color:#5f9e1689;color: #000000;">
-            <div class="card-header" style="font-weight: 700;font-size: 16px;">
-                Prince
-            </div>
+        <div class="card m-2 review_color">
+            <div class="card-header" style="font-weight: 700;font-size: 16px;">Prince</div>
             <div class="card-body">
                 <h5 class="card-title">⭐⭐⭐⭐⭐ 5/5</h5>
                 <p class="card-text" style="font-weight: 500;font-size: 12px;">"Awesome educational institute. Method of
                     clearing concepts is unique and Mr. Nirmal singh is highly qualified teacher teaches student
                     academically as well as morally."</p>
             </div>
-            <div class="card-footer text-body-secondary" style="font-weight: 500;font-size: 12px;">
+            <div class="card-footer" style="font-weight: 500;font-size: 12px;">
                 Reviews on Google
             </div>
         </div>
-        <div class="card m-2" style="min-width: 90%;background-color:#5f9e1689;color: #000000;">
-            <div class="card-header" style="font-weight: 700;font-size: 16px;">
-                Purab Khatri
-            </div>
+        <div class="card m-2 review_color">
+            <div class="card-header" style="font-weight: 700;font-size: 16px;">Purab Khatri</div>
             <div class="card-body">
                 <h5 class="card-title">⭐⭐⭐⭐⭐ 5/5</h5>
                 <p class="card-text" style="font-weight: 500;font-size: 12px;">"It's the way to get your success and
@@ -218,38 +200,34 @@
                     for all classes i.e 1st to 12th as well as it has been developed their teaching way by teaching
                     bachelor's students also."</p>
             </div>
-            <div class="card-footer text-body-secondary" style="font-weight: 500;font-size: 12px;">
+            <div class="card-footer" style="font-weight: 500;font-size: 12px;">
                 Reviews on Google
             </div>
         </div>
         <!-- button  -->
     </div>
-    <div class="" style="background-color: #dde1e7;display: flex;justify-content: center;">
-        <button onclick="read_more_reviews()" class="btn btn-primary m-2" type="button"
-            style="width: 100px;border-radius: 100px;padding: 10px;width: 40%;font-weight: 700;font-size: 12px;"><i
-                class="fa fa-comments-o" style="font-size: 15px;"></i> Read More Reviews</button>
-        <button onclick="write_review()" class="btn btn-primary m-2" type="button"
-            style="width: 100px;border-radius: 100px;padding: 10px;width: 40%;font-weight: 700;font-size: 12px;"><i
+    <div class="" style="background-color: var(--white);display: flex;justify-content: center;padding-bottom: 20px;">
+        <button onclick="read_more_reviews()" class="btn m-2 review_btn_color" type="button"><i class="fa fa-comments-o" style="font-size: 15px;"></i> Read More Reviews </button>
+        <button onclick="write_review()" class="btn m-2 review_btn_color" type="button"><i
                 class="fa fa-commenting-o" style="font-size: 15px;"></i> Write a Review</button>
     </div>
 
 
-    <footer class="pt-3 pb-3"
-        style="height: auto;display: flex;justify-content: center;align-items: center;background-color: #dde1e7;border-top: rgb(93, 93, 93) .5px solid;flex-direction: column;">
+    <footer class="pt-3 pb-3">
         <div class="container text-center">
             <div class="row">
                 <div class="">
                     <div style="display: flex;align-items: center;flex-direction: column;">
                         <a class="navbar-brand" href="#"><img src="./images/logo-c3.png" alt="Logo" width="120"
                                 height="120" class="d-inline-block align-text-top"></a>
-                        <span style="font-weight: 500;">CHAHAL COACHING CENTER - C3</span>
+                        <span style="font-weight: 500;color: var(--main);">CHAHAL COACHING CENTER - C3</span>
                     </div>
                     <span style="font-size: 12px;font-weight: 600;color: grey;">"With the primary aim of imparting real education, Chahal coaching center was established in 2015. Since then, results speak volumes for the quality of education students get in here. Join us and experience the true meaning of learning."</span>
                     <div class="d-grid gap-2 mx-auto">
                         <a aria-label="Chat on WhatsApp" href="https://wa.me/+918700572539?text=Hi,I want to Join."
                             class="link-light link-offset-2 link-underline link-underline-opacity-0 btn m-5"
                             target="_blank"
-                            style="font-size: 20px;padding: 10px;border-radius: 30px;background: #5e9e16;font-weight: 600;"><i
+                            style="font-size: 20px;padding: 10px;border-radius: 30px;background:var(--main);font-weight: 600;color: var(--white);"><i
                                 class="fa fa-whatsapp "></i><span> Join Now</span></a>
                     </div>
                 </div>
@@ -262,20 +240,16 @@
             <div class="row">
                 <div class="col" style="display: flex;align-items: center;justify-content: center;"><a
                         href="https://www.instagram.com/c3_chahal_coaching_center/" target="_blank"
-                        class="link-light link-offset-2 link-underline link-underline-opacity-0 btn m-3"
-                        style="background:#5e9e16;border-radius: 100px;padding: 10px;text-align: center;display: flex;justify-content: center;align-items: center;flex-direction: column;"
-                        id="socialacc"><i class="fa fa-instagram" style="font-size: 25px;"></i><span
+                        class="link-light link-offset-2 link-underline link-underline-opacity-0 btn m-3 social_icon" id="socialacc"><i class="fa fa-instagram" style="font-size: 25px;"></i><span
                             id="nos">Instagram</span></a></div>
                 <div class="col" style="display: flex;align-items: center;justify-content: center;"><a href="#"
                         target="_blank" id="socialacc"
-                        class="link-light link-offset-2 link-underline link-underline-opacity-0 btn m-3"
-                        style="background:#5e9e16;border-radius: 100px;padding: 10px;text-align: center;display: flex;justify-content: center;align-items: center;flex-direction: column;"><i
+                        class="link-light link-offset-2 link-underline link-underline-opacity-0 btn m-3 social_icon"><i
                             class="fa fa-facebook-square" style="display: block;font-size: 25px;"></i><span
                             id="nos">Facebook</span></a></div>
                 <div class="col" style="display: flex;align-items: center;justify-content: center;"><a href="#"
                         target="_blank" id="socialacc"
-                        class="link-light link-offset-2 link-underline link-underline-opacity-0 btn m-3"
-                        style="background:#5e9e16;border-radius: 100px;padding: 10px;text-align: center;display: flex;justify-content: center;align-items: center;flex-direction: column;"><i
+                        class="link-light link-offset-2 link-underline link-underline-opacity-0 btn m-3 social_icon"><i
                             class="fa fa-facebook-square" style="font-size: 25px;"></i><span
                             id="nos">Facebook</span></a></div>
             </div>

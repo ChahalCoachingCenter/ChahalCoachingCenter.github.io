@@ -38,11 +38,43 @@ html,body{
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    height: 50vh;
+    background-color: var(--white);
+    height: 300px;
     width: 40%;
-    border-bottom-left-radius: 120px;
-    box-shadow: inset 2px -2px 3px 1px var(--main);
+    border-bottom-left-radius: 80px;
     border: none;
+}
+#auto_filler_hover{
+    display: flex;flex-direction: column;justify-content: end;z-index: 20;
+    height: auto;
+    width: 90%;
+    border-radius: 30px;
+    background-color: rgba(0, 0, 0, 0);
+    box-shadow: 0px 0px 300px 50px black;
+}
+.form-lable_color{
+    color: var(--main);
+    font-weight: 300;
+    font-size: 18px;
+    padding: 5px;
+}
+.form_heading{
+    text-align: center;font-weight: 700;background-color: var(--main);padding: 20px;border-radius: 0px;color: var(--white);font-size: 20px;margin: 0px;border-top: 1px solid var(--white);
+}
+.form_input_color{
+    background-color: var(--white);
+    border-radius: 100px;
+    padding: 10px;
+}
+.form_buttons{
+    background-color: var(--main);
+    color: var(--white);
+    border-color: var(--indigo-dye);
+    border-radius:30px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    padding: 10px;
+    font-weight: 700px;
 }
 .carousel-inner{
     height: 70vh;
@@ -108,18 +140,23 @@ html,body{
     align-items:start;
     justify-content: center;
 }
-
-#auto_filler_hover{
-    height: auto;
-    width: 90%;
-    z-index: 3;
-    border-radius: 30px;
-    background-color: rgba(0, 0, 0, 0);
-    box-shadow: 0px 0px 300px 50px black;
+.review_color{
+    min-width: 90%;background-color:var(--charcoal);color: var(--white);
 }
+.review_btn_color{
+    width: 100px;border-radius: 100px;padding: 20px;width: 40%;font-weight: 700;font-size: 14px;background-color: var(--light);color: var(--white);
+}
+
 .hide_class{
     display: none;
     opacity: 0;
+}
+
+footer{
+    height: auto;display: flex;justify-content: center;align-items: center;background-color: var(--white);border-top: var(--charcoal) .5px solid;flex-direction: column;
+}
+.social_icon{
+    background:var(--main);color: var(--white);border-radius: 100px;padding: 10px;text-align: center;display: flex;justify-content: center;align-items: center;flex-direction: column;
 }
 .footer_span{
     display: inline;color: gray;font-size: 13px;font-weight: 500;
