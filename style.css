@@ -9,6 +9,10 @@
 }
 *{
     box-sizing: border-box;
+    transition: all .5s;
+}
+*::-webkit-scrollbar{
+    display: none;
 }
 html,body{
     width: 100vw;

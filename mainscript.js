@@ -138,7 +138,7 @@ let auto_form_filler_alert = () => {
                 WhatsApp</button>
         </form>
             </div>
-            <button type="button" class="btn-close position-absolute top-0 end-0 m-4" aria-label="Close" onclick="close_hover_form()" style="color:"var(--white);"></button>` 
+            <button type="button" class="btn-close position-absolute top-0 end-0 m-4" aria-label="Close" onclick="close_hover_form()" style="color:var(--white);background-color:var(--white)"></button>` 
 
         }, 10000);
     }
