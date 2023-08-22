@@ -58,7 +58,7 @@ let form_filler = () => {
     let address = document.getElementById('address_form_send').value;
     let comment = document.getElementById('comment_form_send').value;
 
-    window.location.href = `mailto:recipient@example.com?subject=I%20Want%20to%20Join%20Classes&body=Hi%20my%20name%20is%20${name},%0D%0AClass%20:%20${classstud}%0D%0AContact%20Number%20:%20${phoneno}%0D%0APermanent%20Address%20:%20${address}%0D%0AComment%20:%20${comment}`;
+    window.location.href = `mailto:Chahalcoachingcenterc3@gmail.com?subject=I%20Want%20to%20Join%20Classes&body=Hi%20my%20name%20is%20${name},%0D%0AClass%20:%20${classstud}%0D%0AContact%20Number%20:%20${phoneno}%0D%0APermanent%20Address%20:%20${address}%0D%0AComment%20:%20${comment}`;
     document.getElementById('form_heading_title').innerHTML="We'll reach you soon..."
     form_div.innerHTML= ""
     let aa = document.createElement('div');
