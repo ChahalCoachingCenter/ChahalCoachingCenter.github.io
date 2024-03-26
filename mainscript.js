@@ -60,11 +60,17 @@ let autoFillerAlertTimer;
 const scriptURL =
   "https://script.google.com/macros/s/AKfycbzUE7tWLKgiFz2iJQe_sQ3mbpHoS-hRWLhiNViZxorpHlHmiDsmJExWJ80TZjug42IrpA/exec";
 const form = document.forms["student-details-c3"];
+const form_button_data = document.getElementById('form_button_data');
 
 form.addEventListener("submit", (e) => {
   e.preventDefault();
+  form_button_data.disabled = true;
+  form_button_data.innerText = "Sending..."
   fetch(scriptURL, { method: "POST", body: new FormData(form) })
-    .then((response) => console.log("Success!", response))
+    .then((response) => {
+        form_button_data.innerText = "Submitted ✅"
+
+        console.log("Success!", response)})
     .catch((error) => console.error("Error!", error.message));
 });
 
