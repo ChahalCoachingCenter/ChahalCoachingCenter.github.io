@@ -146,13 +146,14 @@
         <div class="form-floating mb-3">
           <input
             type="name"
-            id="name_form_send"
+            id="name"
             class="form-control form_input_color"
             placeholder="name@example.com"
           />
           <label for="name">Name</label>
         </div>
         <select
+          id="class"
           class="form-select form_input_color mb-3"
           aria-label="Default select example"
           id="class_form_send"
@@ -167,34 +168,34 @@
           <option value="CUET">CUET</option>
         </select>
         <div class="form-floating mb-3">
+            <input
+              type="text"
+              id="subject"
+              class="form-control form_input_color"
+              placeholder=""
+            />
+            <label for="subject">Subjects</label>
+          </div>
+        <div class="form-floating mb-3">
           <input
             type="tel"
-            id="phoneno_form_send"
+            id="phone"
             class="form-control form_input_color"
             placeholder="name@example.com"
           />
           <label for="tel">Phone Number</label>
         </div>
-        <div class="form-floating mb-3">
-          <input
-            type="address"
-            id="address_form_send"
-            class="form-control form_input_color"
-            placeholder="name@example.com"
-          />
-          <label for="address">Permanent Address</label>
-        </div>
         <div class="form-floating">
           <textarea
             type="comment"
-            id="comment_form_send"
+            id="comment"
             placeholder="Enter your comment........."
             class="form-control form_input_color"
           ></textarea>
           <label for="comment">Comment</label>
         </div>
 
-        <button type="submit">Submit</button>
+        <button type="submit" class="btn bg-white m-2">Submit</button>
       </form>
     </div>
 

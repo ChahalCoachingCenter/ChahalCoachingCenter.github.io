@@ -82,42 +82,62 @@ let auto_form_filler_alert = () => {
       a.innerHTML = `<h3 id="form_heading_title" class="form_heading" style="border-top-left-radius:30px;border-top-right-radius:30px;">STUDENT REGISTRAION FORM</h3>
             <div class="form_fill" style="background-color: var(--light);padding: 10px;margin: 0px;border-bottom-left-radius:30px;border-bottom-right-radius:30px;" id="form_filler_div">
             <form name="student-details-c3">
-            <div class="form-floating mb-3">
-                <input type="name" id="name_form_send" class="form-control form_input_color"
-                    placeholder="name@example.com">
-                <label for="name">Name</label>
-            </div>
-            <select class="form-select form_input_color mb-3" aria-label="Default select example" id="class_form_send">
-                <option value="Null" style="color: gray;">Select Class</option>
-                <option value="1th to 8th">1th to 8th</option>
-                <option value="9th">9th</option>
-                <option value="10th">10th</option>
-                <option value="11th">11th</option>
-                <option value="12th">12th</option>
-                <option value="NDA">NDA</option>
-                <option value="CUET">CUET</option>
-            </select>
-            <div class="form-floating mb-3">
-                <input type="tel" id="phoneno_form_send" class="form-control form_input_color"
-                    placeholder="name@example.com">
-                <label for="tel">Phone Number</label>
-            </div>
-            <div class="form-floating mb-3">
-                <input type="address" id="address_form_send" class="form-control form_input_color"
-                    placeholder="name@example.com">
-                <label for="address">Permanent Address</label>
-            </div>
-            <div class="form-floating">
-                <textarea type="comment" id="comment_form_send" placeholder="Enter your comment........."
-                    class="form-control form_input_color"></textarea>
-                <label for="comment">Comment</label>
-            </div>
+        <div class="form-floating mb-3">
+          <input
+            type="name"
+            id="name"
+            class="form-control form_input_color"
+            placeholder="name@example.com"
+          />
+          <label for="name">Name</label>
+        </div>
+        <select
+          id="class"
+          class="form-select form_input_color mb-3"
+          aria-label="Default select example"
+          id="class_form_send"
+        >
+          <option value="Null" style="color: gray">Select Class</option>
+          <option value="1th to 8th">1th to 8th</option>
+          <option value="9th">9th</option>
+          <option value="10th">10th</option>
+          <option value="11th">11th</option>
+          <option value="12th">12th</option>
+          <option value="NDA">NDA</option>
+          <option value="CUET">CUET</option>
+        </select>
+        <div class="form-floating mb-3">
+            <input
+              type="text"
+              id="subject"
+              class="form-control form_input_color"
+              placeholder=""
+            />
+            <label for="subject">Subjects</label>
+          </div>
+        <div class="form-floating mb-3">
+          <input
+            type="tel"
+            id="phone"
+            class="form-control form_input_color"
+            placeholder="name@example.com"
+          />
+          <label for="tel">Phone Number</label>
+        </div>
+        <div class="form-floating">
+          <textarea
+            type="comment"
+            id="comment"
+            placeholder="Enter your comment........."
+            class="form-control form_input_color"
+          ></textarea>
+          <label for="comment">Comment</label>
+        </div>
 
-            <button type="submit">Submit</button>
-        </form>
+        <button type="submit" class="btn bg-white m-2">Submit</button>
+      </form>
             </div>
             <button type="button" class="btn-close position-absolute top-0 end-0 m-4" aria-label="Close" onclick="close_hover_form()" style="color:var(--white);background-color:var(--white)"></button>`;
     }, 10000);
   }
 };
-auto_form_filler_alert();
